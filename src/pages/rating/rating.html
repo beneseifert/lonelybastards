@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p>
+      How was your date yesterday?<br>
+    Who do you want to see again?
+  </p>
+      <ion-card (click)="toggleBastard('uli', 0)">
+          <img src="/images/uli.jpg">
+          <div class="card-title">Uli</div>
+      </ion-card>
+      <ion-card (click)="toggleBastard('daniel', 1)">
+          <img src="/images/daniel.jpg">
+          <div class="card-title">Daniel</div>
+      </ion-card>
+      <ion-card (click)="toggleBastard('bene', 2)">
+          <img src="/images/bene.jpg">
+          <div class="card-title">Bene</div>
+      </ion-card>
+      <ion-card (click)="toggleBastard('alexa', 3)">
+          <img src="/images/alexa.jpg">
+          <div class="card-title">Alexa</div>
+      </ion-card>
+      <ion-card (click)="toggleBastard('kim', 4)">
+          <img src="/images/kim.jpg">
+          <div class="card-title">Kim</div>
+      </ion-card>
+
+      <button ion-button *ngIf="likedBastards == 0">They all sucked&nbsp;<ion-icon name="sad"></ion-icon></button>
+      <button ion-button *ngIf="likedBastards == 1">Liked that Bastard&nbsp;<ion-icon name="heart"></ion-icon></button>
+      <button ion-button *ngIf="likedBastards > 1">Liked those Bastards&nbsp;<ion-icon name="heart"></ion-icon></button>
+</ion-content>

@@ -1,0 +1,29 @@
+ion-card.card-md {
+    padding: 2rem;
+    margin: 0 0 1rem;
+    width: 100%;
+    background-color: #fbb;
+    white-space: nowrap;
+    padding: 0;
+    max-height: 80px;
+    overflow: hidden;
+
+    &.active {
+        background-color: #bfb;
+    }
+
+    img {
+        display: inline-block;
+        width: 25%;
+        height: auto;
+        vertical-align: top;
+    }
+
+    .card-title {
+        display: inline-block;
+        width: 75%;
+        margin-left: 1rem;
+        position: relative;
+        top: 32px;
+    }
+}

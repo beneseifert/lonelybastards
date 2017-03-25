@@ -5,9 +5,14 @@
 </ion-header>
 
 <ion-content padding>
-  <p>
+  <p *ngIf="!changedState">
     Go and hold each others' hands!
   </p>
   
   <img src="{{mapsUrl}}" />
+
+  <p *ngIf="changedState">
+      Tell us about those Bastards you met yesterday!
+      <button ion-button (click)="openRating()">OK!</button>
+  </p>
 </ion-content>
