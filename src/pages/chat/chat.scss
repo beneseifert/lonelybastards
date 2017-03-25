@@ -1,7 +1,28 @@
+page-chat {
+    .scroll-content {
+        background-color: #f4f4f4;
+    }
+
+    h2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 16px;
+        background-color: #fff;
+    }
+}
+
 div.bottom {
     position: absolute;
-    bottom: 16px;
+    left: 0;
+    bottom: 0;
     width: 100%;
+
+    .chat-input-wrapper {
+        background-color: #fff;
+        padding: 0 0 16px 16px;
+    }
 
     ion-item {
         display: inline-block;
@@ -13,10 +34,12 @@ div.bottom {
         display: none;
     }
 
+
     ion-card.chat {
         width: 80%;
-        background-color: transparent;
+        background-color: #fff;
         padding: 3rem;
+        margin-left: 16px;
     }
 
     button {

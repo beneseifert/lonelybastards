@@ -24,7 +24,7 @@ export class ConfirmRatingPage {
    public params: NavParams) {
     let matches = this.params.get('likedBastards');
     this.matchName = matches[Math.round(Math.random() * (matches.length - 1))];
-    this.matchImageUrl = "/images/" + this.matchName + ".png";
+    this.matchImageUrl = "images/" + this.matchName + ".png";
     this.matchName = this.matchName[0].toUpperCase() + this.matchName.substr(1);
    }
 

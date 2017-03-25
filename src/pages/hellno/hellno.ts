@@ -14,7 +14,7 @@ export class HellNoPage {
   public searchAgain() {
       
         let loader = this.loadingCtrl.create({
-        content: "Searching for other Lonely Bastards",
+        content: "Searching for other Local Mates",
         duration: 3000
         });
         loader.present();

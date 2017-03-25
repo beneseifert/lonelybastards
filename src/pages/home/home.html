@@ -1,18 +1,19 @@
 ﻿<ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title><img src="images/logo.png" width="160"></ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <p>
-    There are five Lonely Bastards at Burda Bootcamp
+    There are five Local Mates at Burda Bootcamp
   </p>
   
   <img src="{{mapsUrl}}" />
   <p>
     Wanna join them?
   </p>
-  <button ion-button (click)="openConfirm()">Fuck Yeah!</button>
-  <button ion-button color="light" (click)="openHellNo()">Hell No!</button>
+  <img src="http://daniel-lueken.com/images/panel_portrait_1.jpg" />
+  <button ion-button (click)="openConfirm()" class="half">Fuck Yeah!</button>
+  <button ion-button color="light" (click)="openHellNo()" class="half">Hell No!</button>
 </ion-content>

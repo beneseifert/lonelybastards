@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title><img src="images/logo.png" width="160"></ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -12,7 +12,6 @@
   <img src="{{mapsUrl}}" />
 
   <p *ngIf="changedState">
-      Tell us about those Bastards you met yesterday!
-      <button ion-button (click)="openRating()">OK!</button>
+      <button ion-button (click)="openRating()" class="full">Tell us about your Mates yesterday!</button>
   </p>
 </ion-content>

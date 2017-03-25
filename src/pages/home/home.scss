@@ -1,3 +1,20 @@
 page-home {
 
 }
+
+ion-header {
+    text-align: center;
+
+    img {
+        width: 160px;
+        height: auto;
+    }
+}
+
+button.half {
+    width: 48%;
+}
+
+button.full {
+    width: 98%;
+}
