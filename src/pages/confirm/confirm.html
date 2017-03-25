@@ -12,6 +12,7 @@
   <img src="{{mapsUrl}}" />
 
   <p *ngIf="changedState">
-      <button ion-button (click)="openRating()" class="full">Tell us about your Mates yesterday!</button>
+      <button ion-button (click)="openRating()" *ngIf="onConfirmPage" class="full">Tell us about your Mates yesterday!</button>
+      <button ion-button (click)="openChat()" *ngIf="showMatch" class="full">You got a match!</button>
   </p>
 </ion-content>

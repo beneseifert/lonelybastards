@@ -16,11 +16,11 @@ export class ConfirmPage {
 
 private config: Config = null;
 public changedState: boolean = false;
-  public mapsUrl = "https://maps.googleapis.com/maps/api/staticmap?center=Arabellastraße+23,Munich,Germany&markers=color:red%7CArabellastraße+23,Munich,Germany&zoom=16&size=500x400&key=";
+  public mapsUrl = "images/map1.png";
+  public onConfirmPage: boolean = true;
 
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController, public zone: NgZone) {
       this.config = new Config();
-      this.mapsUrl +=  this.config.googleMapsApiKey;
   }
 
   ionViewDidEnter() {
@@ -31,11 +31,11 @@ public changedState: boolean = false;
             });
             loader.present();
         setTimeout(() => {
-            this.mapsUrl = "https://maps.googleapis.com/maps/api/staticmap?center=Schloß+Bellevue,Berlin,Germany&markers=color:red%7CSchloß+Bellevue,Berlin,Germany&zoom=16&size=500x400&key=" + this.config.googleMapsApiKey;
+            this.mapsUrl = "images/map2.png";
         this.changedState = true;
         this.zone.run(() => {});
         }, 2000);
-      }, 2000);
+      }, 5000);
   }
 
   openRating() {

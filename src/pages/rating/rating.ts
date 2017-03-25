@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { LoadingController } from 'ionic-angular';
 
-import { ConfirmRatingPage } from '../confirm/rating';
+import { ConfirmRatingPage1 } from '../confirm/ratingbefore';
 
 
 @Component({
@@ -33,7 +33,7 @@ export class RatingPage {
   }
 
   openConfirmRating() {
-    this.navCtrl.push(ConfirmRatingPage, {'likedBastards': this.likedBastardsArr});
+    this.navCtrl.push(ConfirmRatingPage1, {'likedBastards': this.likedBastardsArr});
   }
 
 

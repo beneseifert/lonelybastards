@@ -8,7 +8,8 @@ import { RatingPage } from '../pages/rating/rating';
 import { HellNoPage } from '../pages/hellno/hellno';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-import { ConfirmRatingPage } from '../pages/confirm/rating';
+import { ConfirmRatingPage2 } from '../pages/confirm/rating';
+import { ConfirmRatingPage1 } from '../pages/confirm/ratingbefore';
 import { ChatPage } from '../pages/chat/chat';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -24,7 +25,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ConfirmPage,
     HellNoPage,
     RatingPage,
-    ConfirmRatingPage,
+    ConfirmRatingPage1,
+    ConfirmRatingPage2,
     ChatPage
   ],
   imports: [
@@ -40,7 +42,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ConfirmPage,
     HellNoPage,
     RatingPage,
-    ConfirmRatingPage,
+    ConfirmRatingPage1,
+    ConfirmRatingPage2,
     ChatPage
   ],
   providers: [

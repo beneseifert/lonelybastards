@@ -11,9 +11,9 @@ import { ChatPage } from '../chat/chat';
   selector: 'page-confirm-rating',
   templateUrl: 'rating.html'
 })
-export class ConfirmRatingPage {
+export class ConfirmRatingPage2 {
 
-    public showMatch: boolean = false;
+    public showMatch: boolean = true;
     public matchName: string = "";
     public matchImageUrl: string = "";
 
@@ -29,9 +29,6 @@ export class ConfirmRatingPage {
    }
 
   ionViewDidEnter() {
-      setTimeout(() => {
-        this.showMatch = true;
-      }, 2000);
   }
 
   openChat() {
