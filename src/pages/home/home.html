@@ -6,13 +6,13 @@
 
 <ion-content padding>
   <p>
-    There are two Lonely Bastards
+    There are two Lonely Bastards at Burda Bootcamp
   </p>
   
   <img src="{{mapsUrl}}" />
   <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
+    Wanna join them?
   </p>
-  <button ion-button>Ok</button>
+  <button ion-button (click)="openConfirm()">Fuck Yeah!</button>
+  <button ion-button color="light" (click)="openHellNo()">Hell No!</button>
 </ion-content>
