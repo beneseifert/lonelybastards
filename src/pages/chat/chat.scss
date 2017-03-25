@@ -1,0 +1,28 @@
+div.bottom {
+    position: absolute;
+    bottom: 16px;
+    width: 100%;
+
+    ion-item {
+        display: inline-block;
+        width: 73%;
+        padding:0;
+    }
+
+    input[aria-hidden] {
+        display: none;
+    }
+
+    ion-card.chat {
+        width: 80%;
+        background-color: transparent;
+        padding: 3rem;
+    }
+
+    button {
+        display: inline-block;
+        width: 15%;
+        margin: 0 0 0 10px;
+        vertical-align: bottom;
+    }
+}

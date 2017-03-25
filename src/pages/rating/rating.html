@@ -10,27 +10,27 @@
     Who do you want to see again?
   </p>
       <ion-card (click)="toggleBastard('uli', 0)">
-          <img src="/images/uli.jpg">
+          <img src="/images/uli.png">
           <div class="card-title">Uli</div>
       </ion-card>
       <ion-card (click)="toggleBastard('daniel', 1)">
-          <img src="/images/daniel.jpg">
+          <img src="/images/daniel.png">
           <div class="card-title">Daniel</div>
       </ion-card>
       <ion-card (click)="toggleBastard('bene', 2)">
-          <img src="/images/bene.jpg">
+          <img src="/images/bene.png">
           <div class="card-title">Bene</div>
       </ion-card>
       <ion-card (click)="toggleBastard('alexa', 3)">
-          <img src="/images/alexa.jpg">
+          <img src="/images/alexa.png">
           <div class="card-title">Alexa</div>
       </ion-card>
       <ion-card (click)="toggleBastard('kim', 4)">
-          <img src="/images/kim.jpg">
+          <img src="/images/kim.png">
           <div class="card-title">Kim</div>
       </ion-card>
 
-      <button ion-button *ngIf="likedBastards == 0">They all sucked&nbsp;<ion-icon name="sad"></ion-icon></button>
-      <button ion-button *ngIf="likedBastards == 1">Liked that Bastard&nbsp;<ion-icon name="heart"></ion-icon></button>
-      <button ion-button *ngIf="likedBastards > 1">Liked those Bastards&nbsp;<ion-icon name="heart"></ion-icon></button>
+      <button ion-button *ngIf="likedBastards == 0" (click)="openConfirmRating()" color="danger">They all sucked&nbsp;<ion-icon name="sad"></ion-icon></button>
+      <button ion-button *ngIf="likedBastards == 1" (click)="openConfirmRating()">Liked that Bastard&nbsp;<ion-icon name="heart"></ion-icon></button>
+      <button ion-button *ngIf="likedBastards > 1" (click)="openConfirmRating()">Liked those Bastards&nbsp;<ion-icon name="heart"></ion-icon></button>
 </ion-content>

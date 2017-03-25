@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { LoadingController } from 'ionic-angular';
 
+import { ConfirmRatingPage } from '../confirm/rating';
+
 
 @Component({
   selector: 'page-rating',
@@ -28,6 +30,10 @@ export class RatingPage {
         this.likedBastards++;
         cards[index].className += " active";
     }
+  }
+
+  openConfirmRating() {
+    this.navCtrl.push(ConfirmRatingPage, {'likedBastards': this.likedBastardsArr});
   }
 
 

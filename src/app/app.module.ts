@@ -8,6 +8,8 @@ import { RatingPage } from '../pages/rating/rating';
 import { HellNoPage } from '../pages/hellno/hellno';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { ConfirmRatingPage } from '../pages/confirm/rating';
+import { ChatPage } from '../pages/chat/chat';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,7 +23,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     ConfirmPage,
     HellNoPage,
-    RatingPage
+    RatingPage,
+    ConfirmRatingPage,
+    ChatPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -35,7 +39,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     ConfirmPage,
     HellNoPage,
-    RatingPage
+    RatingPage,
+    ConfirmRatingPage,
+    ChatPage
   ],
   providers: [
     StatusBar,

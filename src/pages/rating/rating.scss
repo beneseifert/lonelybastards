@@ -2,14 +2,14 @@ ion-card.card-md {
     padding: 2rem;
     margin: 0 0 1rem;
     width: 100%;
-    background-color: #fbb;
+    background-color: lighten(#ff1056, 30%);
     white-space: nowrap;
     padding: 0;
     max-height: 80px;
     overflow: hidden;
 
     &.active {
-        background-color: #bfb;
+        background-color: lighten(#0feb9b, 30%);
     }
 
     img {
